@@ -1,0 +1,16 @@
+{
+  "action": "opened",
+  "pull_request": {
+    "number": 43,
+    "title": "[HOTFIX] Fix critical null pointer in ChurnRiskController",
+    "user": { "login": "rafael-marques" },
+    "html_url": "https://github.com/test-org/devops-slack/pull/43",
+    "additions": 8,
+    "deletions": 2,
+    "changed_files": 1,
+    "labels": [{ "name": "hotfix" }]
+  },
+  "repository": {
+    "full_name": "test-org/devops-slack"
+  }
+}

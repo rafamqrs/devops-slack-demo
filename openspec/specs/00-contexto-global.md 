@@ -1,0 +1,10 @@
+# Contexto do Projeto: O Futuro do SDLC com Agentforce e Slack
+
+**Visão Geral:** Nesta demo, mostramos como a Salesforce transforma o DevOps. Usamos o GitHub Actions como motor (System of Automation), o Salesforce como plataforma (System of Record), e o Slack como a interface unificada (System of Engagement). O protagonista é o **Agentforce para DevOps**, atuando em dois níveis de maturidade.
+
+**Cenários da Demonstração:**
+1. **Agentforce como Assistente (Human-in-the-Loop):** O desenvolvedor abre um Pull Request (PR). O Agentforce analisa o código, resume o impacto no Slack e **pede aprovação** ao Release Manager (via botões interativos no Slack). O humano decide.
+2. **Agentforce Autônomo (Agentic CI/CD):** Um bug crítico (P0) é detectado. O desenvolvedor submete a correção. O Agentforce analisa o PR, roda os testes de regressão no GitHub Actions, verifica que a cobertura está acima de 90% sem vulnerabilidades, **aprova automaticamente**, faz o merge e apenas **notifica** o time no Slack: *"Bug resolvido e em produção. Durmam tranquilos."*
+
+**Regras para o Claude Code:**
+Gere código modular, limpo, focado em mostrar o Block Kit do Slack e fluxos de CI/CD do GitHub Actions.

@@ -1,0 +1,16 @@
+{
+  "action": "opened",
+  "pull_request": {
+    "number": 42,
+    "title": "feat: Add ChurnRiskIndicator LWC component",
+    "user": { "login": "rafael-marques" },
+    "html_url": "https://github.com/test-org/devops-slack/pull/42",
+    "additions": 156,
+    "deletions": 12,
+    "changed_files": 5,
+    "labels": []
+  },
+  "repository": {
+    "full_name": "test-org/devops-slack"
+  }
+}

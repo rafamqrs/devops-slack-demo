@@ -1,0 +1,35 @@
+<template>
+    <lightning-card title="Churn Risk Indicator" icon-name="standard:opportunity">
+        <template if:true={hasData}>
+            <div class="slds-p-around_medium">
+                <div class={riskClass}>
+                    <p class="slds-text-heading_small slds-p-around_x-small">
+                        Risk Level: {riskLevel}
+                    </p>
+                </div>
+
+                <div class="slds-m-top_small">
+                    <lightning-progress-bar
+                        value={riskScore}
+                        size="large"
+                        variant="circular">
+                    </lightning-progress-bar>
+                    <p class="slds-text-body_small slds-m-top_xx-small">
+                        Score: {riskScore}%
+                    </p>
+                </div>
+
+                <div class="slds-m-top_medium slds-box slds-theme_shade">
+                    <p class="slds-text-title_bold">Recommendation</p>
+                    <p class="slds-m-top_xx-small">{recommendation}</p>
+                </div>
+            </div>
+        </template>
+
+        <template if:true={error}>
+            <div class="slds-p-around_medium">
+                <p class="slds-text-color_error">{error}</p>
+            </div>
+        </template>
+    </lightning-card>
+</template>
