@@ -40,6 +40,10 @@ public with sharing class ChurnRiskController {
             score += 10;
         }
 
+        if (opp.Account.NumberOfEmployees != null && opp.Account.NumberOfEmployees < 20) {
+            score += 15;
+        }
+
         return Math.min(score, 100);
     }
 
